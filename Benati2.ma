@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Benati2.ma
-//Last modified: Thu, Sep 12, 2024 08:29:22 AM
+//Last modified: Thu, Sep 12, 2024 08:34:49 AM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "27F73D13-4755-3A32-377B-57964CB951C0";
+fileInfo "UUID" "D388DB44-4529-1D0A-D598-958A805D2B08";
 createNode transform -s -n "persp";
 	rename -uid "65829D4E-4BF4-8605-139E-62B05BB4EB2F";
 	setAttr ".v" no;
@@ -96,7 +96,7 @@ createNode mesh -n "WhiteboxRoom" -p "LivingRoom";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 7 ".pt";
+	setAttr -s 3 ".pt";
 	setAttr ".pt[0]" -type "float3" 0 7.4505806e-09 0 ;
 	setAttr ".pt[10]" -type "float3" 0 7.4505806e-09 0 ;
 	setAttr ".pt[15]" -type "float3" 0 7.4505806e-09 0 ;
@@ -1348,20 +1348,20 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0223F3F9-441D-A776-6BD0-908863A3F21D";
+	rename -uid "7E26E869-4918-C1ED-71AC-F7852434A31A";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "3F607793-4B6E-3940-C04D-C599A5242D0C";
+	rename -uid "59389C17-44E2-833C-F55B-6FA5E367E9C7";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "31E40A09-428E-1A44-8E23-AAA42B9B3AA8";
+	rename -uid "45CACDC4-4740-0C49-1680-5BB1D45CDBDC";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "226F7CB8-4420-25DD-2B32-DAB5EDC01AAA";
+	rename -uid "66E02E29-4C7E-B702-8F9C-838E82B64880";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F02895A2-4AB8-CE41-1095-0D9719A04065";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "318D6969-4645-CA91-28D2-CA9BE0AD32DB";
+	rename -uid "2450E0AA-42A8-F8E2-BC50-1FBCB205A4B6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2B3AA0AE-476B-65B8-2CA7-54ACDC10852F";
 	setAttr ".g" yes;
@@ -1580,7 +1580,7 @@ createNode polyCube -n "polyCube3";
 createNode polyTweak -n "polyTweak2";
 	rename -uid "F9C777A7-4945-6C89-4FEE-26B006A8D9F8";
 	setAttr ".uopa" yes;
-	setAttr -s 11 ".tk";
+	setAttr -s 10 ".tk";
 	setAttr ".tk[3]" -type "float3" 0 4.1723251e-07 0 ;
 	setAttr ".tk[4]" -type "float3" 0 4.1723251e-07 0 ;
 	setAttr ".tk[7]" -type "float3" 0 4.1723251e-07 0 ;
@@ -1621,7 +1621,7 @@ createNode polyBevel3 -n "polyBevel2";
 createNode polyTweak -n "polyTweak3";
 	rename -uid "25582CDD-4A78-DEEF-5BB4-C8BACC05D9C0";
 	setAttr ".uopa" yes;
-	setAttr -s 8 ".tk[4:7]" -type "float3"  0 0 0.80499983 0 0 0.80499983
+	setAttr -s 4 ".tk[4:7]" -type "float3"  0 0 0.80499983 0 0 0.80499983
 		 0 0 0.80499983 0 0 0.80499983;
 createNode polyMergeVert -n "polyMergeVert1";
 	rename -uid "63322E13-4B84-CD89-0677-51817547324B";
@@ -1712,28 +1712,15 @@ createNode polyMergeVert -n "polyMergeVert2";
 createNode polyTweak -n "polyTweak5";
 	rename -uid "4B4CF2C7-4D21-02DC-D0EC-6FA58D6AD50C";
 	setAttr ".uopa" yes;
-	setAttr -s 38 ".tk";
-	setAttr ".tk[95]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[96]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[97]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[98]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[99]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[100]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[101]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[102]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[103]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[104]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[105]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[106]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[107]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[108]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[109]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[110]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[111]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[112]" -type "float3" 2.0372681e-10 0 0.069362223 ;
-	setAttr ".tk[113]" -type "float3" 2.0372681e-10 0 0.069362223 ;
+	setAttr -s 19 ".tk[95:113]" -type "float3"  2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223
+		 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223 2.0372681e-10 0 0.069362223;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "50D3E0CD-478A-F410-7C25-189AFF69E59F";
+	rename -uid "F522CCFE-4735-7906-E328-AFA388D7F3ED";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
